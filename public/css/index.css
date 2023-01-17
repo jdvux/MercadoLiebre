@@ -1,0 +1,404 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
+}
+
+.header-completo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    width: 30%;
+    padding-top: 10px;
+
+}
+
+.logo {
+    width: 100%;
+}
+
+.busqueda-container {
+    width: 30%;
+    height: max-content;   
+    justify-content: flex-start;
+    position: relative;
+}
+
+#search-bar {
+    width: 90%;
+    height: max-content;
+    border: hidden;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+}
+
+::placeholder {
+    padding: 5px;
+}
+
+button {
+    border-style: hidden;
+    background-color: transparent;
+    display: flex;
+    top: 2.2px;
+    right: 11%;
+    position: absolute;
+    z-index: 1;
+    color:rgb(100, 100, 100);
+}
+
+.text-header-container {
+    display: inline;
+    width: 33%;
+}
+
+.header-title {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+.titulares {
+    font-size: 24px;
+    color: rgb(71, 69, 69);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-top: 15px;
+    display: inherit;
+    justify-content: inherit;
+    width: 45%;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #1259c3;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 9px;
+}
+
+main {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+article {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ebebeb;
+    padding: 15px;
+    background-color: white;
+    width: 20%;
+}
+
+.imagen-articulo {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-articulos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.descripcion {
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding-top: 15px;
+    text-align: bottom;
+}
+
+.precio {
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: #39b54a;
+    margin: 0 auto;
+    padding-left: 10px;
+    text-align: center;
+    display: inline;
+}
+
+.nombre-articulo {
+    color: #666;
+    text-align: left;
+    padding-top: 15px;
+    display: none;
+}
+
+main section article i {
+    color: #39b54a;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    background-color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+article:hover .nombre-articulo {
+    display: block;
+}
+
+.fa-truck:hover {
+    transform: rotate(-90deg);
+    transition: 500ms;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    background-color: white;
+    width: 100%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.texto-footer {
+    font-size: 12px;
+    margin-bottom: 3%;
+}
+
+.div-footer-padre {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.div-footer-1, .div-footer2, .div-footer-3 {
+    width: 100%;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.fa-gift:hover, .fa-user-shield:hover, .fa-credit-card:hover {
+    color:#39b54a;
+}
+
+.linea-final {
+    text-align: left;
+    margin-top: 35px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+/* mobile */
+
+@media (max-width: 360px) {
+
+    header {
+        padding-bottom: 15px;
+    }
+
+    .header-completo {
+        width: 100%;
+        margin-right: 5%;
+        padding-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .busqueda-container {
+        width: 50%;
+    }
+
+    #search-bar {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    button {
+        top: 2.2%px;
+        right: 21%;
+    }
+
+    .header-title {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .text-header-container {
+        display: block;
+        width: 100vw;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container-articulos {
+        flex-wrap: wrap;
+    }
+
+    article {
+        width: max-content;
+    }
+
+    .nombre-articulo {
+        display: none;
+    }
+
+    footer {
+        box-shadow: none;
+    }
+
+    .div-footer-padre {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* tablets */
+
+@media (min-width: 361px) and (max-width: 768px) {
+
+    header {
+        padding-bottom: 15px;
+    }
+
+    .header-completo {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .logo-container {
+        width: 20%;
+        padding-left: 5px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .busqueda-container {
+        width: 30%;    
+    }
+
+    #search-bar {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    button {
+        top: 2.2%px;
+        right: 21%;
+    }
+
+    .text-header-container {
+        width: 45%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul {
+        width: 45%;
+        font-size: xx-small;
+    }
+
+    li a {
+        font-size: xx-small
+    }
+
+    
+    .burger-menu {
+        display: none;
+    }
+
+    .container-articulos {
+        flex-wrap: wrap;
+    }
+    
+    article { 
+        width: 45%;
+    }
+}
+
+/* desktop */
+
+@media (min-width: 769px) {
+
+    .burger-menu {
+        display: none;
+    }
+}

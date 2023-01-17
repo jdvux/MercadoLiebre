@@ -1,0 +1,417 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+}
+
+.header-completo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    width: 30%;
+    padding-top: 10px;
+
+}
+
+.logo {
+    width: 100%;
+    padding-left: 28px;
+}
+
+.busqueda-container {
+    width: 30%;
+    height: max-content;   
+    justify-content: flex-start;
+    position: relative;
+}
+
+#search-bar {
+    width: 90%;
+    height: max-content;
+    border: hidden;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    display: inline-block;
+}
+
+#button-header {
+    border-style: hidden;
+    background-color: transparent;
+    display: flex;
+    top: 2.2px;
+    right: 11%;
+    position: absolute;
+    z-index: 1;
+    color:rgb(100, 100, 100);
+}
+
+.text-header-container {
+    display: inline;
+    width: 33%;
+}
+
+.header-title {
+    padding-top: 10px;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: #ebebeb;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-left: 28px;
+    padding-right: 28px
+}
+
+ul {
+    list-style: none;
+    padding-top: 15px;
+    display: inherit;
+    justify-content: inherit;
+    width: 45%;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+.burger-menu {
+    border-radius: 8px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    background-color: #1259c3;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 25px;
+    line-height: 34px;
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 9px;
+}
+
+main {
+    width: 90%;
+    margin-left: 5%;
+}
+
+form {
+    padding-top: 30px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+h4 {
+    font-weight: bold;
+    text-align: left;
+    margin-left: 10%;
+    padding-bottom: 5px;
+}
+
+#input-register { 
+    width: 80%;
+    height: max-content;
+    border: hidden;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    line-height: 25px;
+}
+
+.date {
+    padding-left: 5px;
+    padding-right: 5px;
+    color:rgb(100, 100, 100)
+}
+
+.fecha-de-nacimiento {
+    padding-bottom: 15px;
+}
+
+.perfil-comprador {
+    display: inline-block;
+    text-align: left;
+    align-items: left;
+    width: 40%;
+    line-height: 25px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.perfil-vendedor {
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    line-height: 25px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+input[type="radio"], [type="checkbox"] {
+    margin: 0 5px 0;
+}
+
+.interes-opciones {
+    list-style: none;
+    text-align: left;
+    margin-left: 9.7%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+input[type="file"] {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.selecciona-foto { 
+    padding-top: 10px;
+}
+
+#button-register {
+    display: inline;
+    width: 40%;
+    margin-bottom: 5px;
+    height: max-content;
+    border-radius: 3px;
+    background-color: lightgray;
+    color: black;
+    line-height: 30px;
+    border-style: hidden;
+}
+
+#button-register:hover {
+    background-color: #0022AA;
+    color: white;
+    transition: 500ms;   
+}
+
+#input-login { 
+    width: 80%;
+    height: max-content;
+    border: hidden;
+    margin-bottom: 35px;
+    border-radius: 3px;
+    line-height: 40px;
+}
+
+#button-login {
+    display: inline-block;
+    width: 80%;
+    margin-bottom: 5px;
+    height: max-content;
+    line-height: 40px;
+    border-radius: 3px;
+    align-items: center;
+    background-color: lightgray;
+    color: black;
+    border-style: hidden;
+}
+
+#button-login:hover {
+    background-color: #0022AA;
+    color: white;
+    transition: 500ms;
+}
+
+::placeholder {
+    padding: 5px;
+}
+
+footer {
+    text-align: center;
+    color: #666;
+    background-color: white;
+    width: 100%;
+    margin-top: 3%;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.texto-footer {
+    font-size: 12px;
+    margin-bottom: 3%;
+}
+
+.div-footer-padre {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.div-footer-1, .div-footer2, .div-footer-3 {
+    width: 100%;
+}
+
+.fa-credit-card, .fa-gift, .fa-user-shield {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #1259c3;
+}
+
+.fa-gift:hover, .fa-user-shield:hover, .fa-credit-card:hover {
+    color:#39b54a;
+}
+
+.linea-final {
+    text-align: left;
+    margin-top: 35px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+/* mobile */
+
+@media (max-width: 360px) {
+
+    header {
+        padding-bottom: 15px;
+    }
+
+    .header-completo {
+        width: 100%;
+        margin-right: 5%;
+        padding-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .logo-container {
+        margin-left: 5%;
+        width: 40%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .busqueda-container {
+        width: 50%;
+    }
+
+    #search-bar {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    #button-header { 
+        top: 2.2%px;
+        right: 21%;
+    }
+
+    .header-title {
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .text-header-container {
+        display: block;
+        width: 100vw;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .intereses-opciones {
+        margin-left: 7%;
+    }
+
+    footer {
+        box-shadow: none;
+    }
+
+    .div-footer-padre {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* tablets */
+
+@media (min-width: 361px) and (max-width: 768px) {
+    
+    .header-completo {
+        width: 100%;
+        padding-top: 15px;
+    }
+
+    .logo-container {
+        width: 20%;
+        padding-left: 5px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .busqueda-container {
+        width: 30%;    
+    }
+
+    #search-bar {
+        width: 80%;
+        justify-content: flex-start;
+    }
+
+    
+    #button-header {
+        top: 2.2%px;
+        right: 21%;
+    }
+
+    .text-header-container {
+        width: 45%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    ul {
+        width: 45%;
+        font-size: xx-small;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+
+    .intereses-opciones {
+        margin-left: 9.1%;
+    }
+}
+
+/* desktop */
+
+@media (min-width: 769px) {
+
+    .burger-menu {
+        display: none;
+    }
+}
