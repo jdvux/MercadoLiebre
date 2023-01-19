@@ -13,7 +13,7 @@ header {
     padding-bottom: 20px;
 }
 
-.header-completo {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,11 +81,9 @@ body {
     background-color: #ebebeb;
 }
 
-.titulares {
-    font-size: 24px;
-    color: rgb(71, 69, 69);
-    padding-top: 20px;
-    padding-bottom: 20px;
+a:focus {
+    background-color: #39b54a;
+    text-decoration: underline;
 }
 
 nav {
@@ -99,7 +97,7 @@ ul {
     padding-top: 15px;
     display: inherit;
     justify-content: inherit;
-    width: 45%;
+    width: 33%;
 }
 
 li a {
@@ -132,6 +130,13 @@ main {
 
 h3 {
     font-size: 12px;
+}
+
+.titulares {
+    font-size: 24px;
+    color: rgb(71, 69, 69);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 article {
@@ -196,6 +201,7 @@ main section article i {
     position: absolute;
     right: 20px;
     top: -15px;
+    transition: all .5s ease;
 }
 
 article:hover {
@@ -208,7 +214,6 @@ article:hover .nombre-articulo {
 
 .fa-truck:hover {
     transform: rotate(-90deg);
-    transition: 500ms;
 }
 
 footer {
@@ -243,6 +248,7 @@ footer {
 
 .fa-gift:hover, .fa-user-shield:hover, .fa-credit-card:hover {
     color:#39b54a;
+    transition: all .5s ease;
 }
 
 .linea-final {
@@ -322,7 +328,6 @@ footer {
     }
 
     .div-footer-padre {
-        display: flex;
         flex-direction: column;
     }
 }
@@ -372,7 +377,7 @@ footer {
     }
 
     ul {
-        width: 45%;
+        width: 33%;
         font-size: xx-small;
     }
 

@@ -97,6 +97,11 @@ li a {
     color: black;
 }
 
+a:focus {
+    background-color: #39b54a;
+    text-decoration: underline;
+}
+
 .burger-menu {
     border-radius: 8px;
     width: 40px;
@@ -204,6 +209,7 @@ input[type="file"] {
     color: black;
     line-height: 30px;
     border-style: hidden;
+    transition: all .5s ease;
 }
 
 #button-register:hover {
@@ -232,6 +238,7 @@ input[type="file"] {
     background-color: lightgray;
     color: black;
     border-style: hidden;
+    transition: all .5s ease;
 }
 
 #button-login:hover {
@@ -272,6 +279,7 @@ footer {
     margin-top: 15px;
     margin-bottom: 10px;
     color: #1259c3;
+    transition: all .5s ease;
 }
 
 .fa-gift:hover, .fa-user-shield:hover, .fa-credit-card:hover {
