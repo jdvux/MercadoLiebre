@@ -360,6 +360,15 @@ footer {
     }
 }
 
+/* custom */
+
+@media (min-width: 361px) and (max-width: 520px) {
+
+    ul {
+        width: 45%;    
+        }
+}
+
 /* tablets */
 
 @media (min-width: 361px) and (max-width: 768px) {
