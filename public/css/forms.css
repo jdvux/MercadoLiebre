@@ -89,7 +89,7 @@ ul {
     padding-top: 15px;
     display: inherit;
     justify-content: inherit;
-    width: 45%;
+    width: 33%;
 }
 
 li a {
@@ -402,7 +402,6 @@ footer {
     }
 
     ul {
-        width: 45%;
         font-size: xx-small;
     }
     
