@@ -81,11 +81,6 @@ body {
     background-color: #ebebeb;
 }
 
-a:focus {
-    background-color: #39b54a;
-    text-decoration: underline;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -103,6 +98,11 @@ ul {
 li a {
     text-decoration: none;
     color: black;
+}
+
+li a:focus {
+    background-color: #39b54a;
+    text-decoration: underline;
 }
 
 .burger-menu {
