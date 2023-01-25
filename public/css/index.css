@@ -23,7 +23,6 @@ header {
 .logo-container {
     width: 30%;
     padding-top: 10px;
-
 }
 
 .logo {
@@ -109,7 +108,7 @@ li a:focus {
     border-radius: 8px;
     width: 40px;
     height: 40px;
-    margin: 0 auto;
+    margin: 10px auto 0;
     background-color: #1259c3;
 }
 
@@ -241,10 +240,12 @@ footer {
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.div-footer-1, .div-footer2, .div-footer-3 {
-    width: 100%;
+.div-footer1, .div-footer2, .div-footer3 {
+    width: 30%;
 }
 
 .fa-credit-card, .fa-gift, .fa-user-shield {
@@ -283,15 +284,7 @@ footer {
 
     .logo-container {
         margin-left: 5%;
-        width: 40%;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .busqueda-container {
-        width: 50%;
+        margin-right: 10px;
     }
 
     #search-bar {
@@ -311,7 +304,6 @@ footer {
 
     .text-header-container {
         display: block;
-        width: 100vw;
     }
 
     nav {
@@ -336,6 +328,10 @@ footer {
 
     .div-footer-padre {
         flex-direction: column;
+    }
+
+    .div-footer1, .div-footer2, .div-footer3 {
+        width: 100%;
     }
 }
 

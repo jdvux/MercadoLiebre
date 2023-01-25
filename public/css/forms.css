@@ -8,9 +8,12 @@
 header {
     background-color: #EAC926;
     width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 20px;
 }
 
-.header-completo {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,12 +23,10 @@ header {
 .logo-container {
     width: 30%;
     padding-top: 10px;
-
 }
 
 .logo {
     width: 100%;
-    padding-left: 28px;
 }
 
 .busqueda-container {
@@ -45,7 +46,11 @@ header {
     display: inline-block;
 }
 
-#button-header {
+::placeholder {
+    padding: 5px;
+}
+
+button {
     border-style: hidden;
     background-color: transparent;
     display: flex;
@@ -269,10 +274,11 @@ footer {
     display: flex;
     padding-left: 10px;
     padding-right: 10px;
+    width: 100%;
 }
 
-.div-footer-1, .div-footer2, .div-footer-3 {
-    width: 100%;
+.div-footer1, .div-footer2, .div-footer3 {
+    width: 30%;
 }
 
 .fa-credit-card, .fa-gift, .fa-user-shield {
@@ -298,10 +304,6 @@ footer {
 
 @media (max-width: 360px) {
 
-    header {
-        padding-bottom: 15px;
-    }
-
     .header-completo {
         width: 100%;
         margin-right: 5%;
@@ -311,15 +313,7 @@ footer {
 
     .logo-container {
         margin-left: 5%;
-        width: 40%;
-    }
-
-    .logo {
-        width: 100%;
-    }
-
-    .busqueda-container {
-        width: 50%;
+        margin-right: 10px;
     }
 
     #search-bar {
@@ -327,7 +321,7 @@ footer {
         justify-content: flex-start;
     }
 
-    #button-header { 
+    button {
         top: 2.2%px;
         right: 21%;
     }
@@ -339,7 +333,6 @@ footer {
 
     .text-header-container {
         display: block;
-        width: 100vw;
     }
 
     nav {
@@ -357,6 +350,10 @@ footer {
     .div-footer-padre {
         display: flex;
         flex-direction: column;
+    }
+
+    .div-footer1, .div-footer2, .div-footer3 {
+        width: 100%;
     }
 }
 
