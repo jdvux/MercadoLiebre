@@ -10,7 +10,6 @@ header {
     width: 100%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 20px;
 }
 
 .header-container {
@@ -205,17 +204,16 @@ input[type="file"] {
 }
 
 #button-register {
-    display: inline;
+  display: inline;
     width: 40%;
     margin-bottom: 5px;
-    height: max-content;
     border-radius: 3px;
     background-color: lightgray;
     color: black;
     line-height: 30px;
     border-style: hidden;
     transition: all .5s ease;
-}
+} 
 
 #button-register:hover {
     background-color: #0022AA;
@@ -235,11 +233,9 @@ input[type="file"] {
 #button-login {
     display: inline-block;
     width: 80%;
-    margin-bottom: 5px;
-    height: max-content;
     line-height: 40px;
+    margin-bottom: 5px;
     border-radius: 3px;
-    align-items: center;
     background-color: lightgray;
     color: black;
     border-style: hidden;
@@ -275,6 +271,7 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
     width: 100%;
+    justify-content: space-between;
 }
 
 .div-footer1, .div-footer2, .div-footer3 {

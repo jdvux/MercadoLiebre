@@ -21,13 +21,13 @@
 
   <body>
     <header>
-      <div class="header-completo">
+      <div class="header-container">
         <div class="logo-container">
-          <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo" /></a>
+        <img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo" />
       </div>
     <div class="busqueda-container">
         <input type="search" id="search-bar" placeholder="Buscar productos, marcas y más" />
-        <button type="submit" id="button-header"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
       <div class="text-header-container">
       <h3 class="header-title">
@@ -47,7 +47,7 @@
         <br />
         <ul>
           <li>
-            <a href="#">Crea tu cuenta <i class="fa-solid fa-id-card"></i></a>
+            <a href="/register">Crea tu cuenta <i class="fa-solid fa-id-card"></i></a>
           </li>
           <li>
             <a href="/login">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a>
@@ -59,10 +59,9 @@
       </nav>
 
       <div class="burger-menu"><i class="fas fa-bars"></i></div>
+    </header>
 
-  </header>
-  
-  <img src="/images/img-home-banner.jpg" alt="banner" class="banner" />
+    <img src="/images/img-home-banner.jpg" alt="banner" class="banner" />
   
   <main>
       <form action="/" method="GET">
@@ -96,9 +95,9 @@
       <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" id="input-register" required>
 
       <input type="password" name="confirmar-contraseña" placeholder="Confirma tu contraseña" id="input-register" required>
-
-      <a href="/login"></a><button type="submit" id="button-register">Enviar</button></a>
-      <button type="reset" id="button-register">Borrar</button>
+      
+      <a href="/login"><input type="submit" id="button-register" value="Enviar"></a>
+      <input type="reset" id="button-register" value="Borrar"> 
       </form>
     </main>
   </body>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Regístrate - MercadoLiebre</title>
+    <title>Inicia Sesión - MercadoLiebre</title>
     <link rel="stylesheet" href="/css/forms.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,13 +21,13 @@
 
   <body>
     <header>
-      <div class="header-completo">
+      <div class="header-container">
         <div class="logo-container">
-        <a href="/"><img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo" /></a>
+        <img src="/images/logo-mercado-liebre.svg" alt="logo" class="logo" />
       </div>
     <div class="busqueda-container">
         <input type="search" id="search-bar" placeholder="Buscar productos, marcas y más" />
-        <button type="submit" id="button-header"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </div>
       <div class="text-header-container">
       <h3 class="header-title">
@@ -50,7 +50,7 @@
             <a href="/register">Crea tu cuenta <i class="fa-solid fa-id-card"></i></a>
           </li>
           <li>
-            <a href="#">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a>
+            <a href="/login">Ingresa <i class="fa-solid fa-right-to-bracket"></i></a>
           </li>
           <li>
             <a href="#">Mis compras <i class="fa-solid fa-bag-shopping"></i></a>
@@ -59,17 +59,16 @@
       </nav>
 
       <div class="burger-menu"><i class="fas fa-bars"></i></div>
+    </header>
 
-  </header>
-
-  <img src="/images/img-home-banner.jpg" alt="banner" class="banner" />
+    <img src="/images/img-home-banner.jpg" alt="banner" class="banner" />
 
   <main>
       <form action="/" method="GET">
       <input type="text" name="nombre-usuario" placeholder="Ingresa tu nombre de usuario" id="input-login" required>
             
       <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" id="input-login" required>
-      <a href="/"></a><button type="submit" id="button-login">Enviar</button></a>
+      <a href="/"><input type="submit" id="button-login" value="Enviar"></a>
       </form>
     </main>
   </body>
